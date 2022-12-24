@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+*.index
+db.*
+idsToDocs.json
+__pycache__
+migrations

@@ -1,0 +1,30 @@
+.nav {
+  width: 100%;
+  //   background-color: var(--clr-primary-500);
+  background: linear-gradient(-90deg, var(--clr-primary-500), var(--clr-primary-200));
+  color: var(--clr-neutral-200);
+  padding: var(--s1);
+  display: flex;
+  justify-content: space-between;
+
+  &__home,
+  &__about {
+    cursor: pointer;
+  }
+
+  &__home {
+    display: flex;
+    gap: var(--s0);
+    &:hover {
+        color: var(--clr-primary-500);
+        text-shadow: 0 0 2rem var(--clr-primary-500);
+      }
+  }
+
+  &__about {
+    &:hover {
+        color: var(--clr-neutral-300);
+        text-shadow: 0 0 2rem var(--clr-neutral-300);
+      }
+  }
+}

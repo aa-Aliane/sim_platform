@@ -1,0 +1,60 @@
+.list {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 1rem;
+
+  &__info {
+    display: flex;
+    width: 100%;
+    text-transform: capitalize;
+    direction: ltr;
+    cursor: default;
+
+    &[info-state="false"] {
+      display: none;
+    }
+
+    & div {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 98%;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__info--authors {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  &__action {
+    & button {
+      min-width: 100%;
+    }
+  }
+
+  &:hover {
+    background-color: var(--clr-primary-700);
+    transition: all var(--duration-1) linear;
+  }
+
+  & a {
+    color: var(--clr-neutral-200);
+
+    &:hover {
+      color: var(--clr-primary-200);
+    }
+  }
+}
