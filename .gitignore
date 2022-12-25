@@ -29,3 +29,4 @@ db.*
 idsToDocs.json
 __pycache__
 migrations
+*.zip
